@@ -8,6 +8,7 @@
 
 
 {% block body %}  
+    {%if meetup_found %}
     <article>
         <img src="" alt="">
 
@@ -32,4 +33,5 @@
             FORM
         </section>
     </article>
+    {% endif %}
 {% endblock %}
