@@ -18,8 +18,14 @@ def index(request):
     })
 
 
-def meetup_details(request):
-    selected_meetup = {'title': 'First Meetup', 'location': 'Banani', 'slug': 'first', 'description': 'sdf khjsd;fj dsjfkl jdsa;f ' },
+def meetup_details(request, meetup_slug):
+    print (meetup_slug)
+    selected_meetup = {
+        'title': 'First Meetup',
+        'location': 'Banani', 
+        'slug': 'first', 
+        'description': 'Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem' 
+        },
 
     return render(request, 'challenges/meetup_details.html', {
         'selected_meetup': selected_meetup
