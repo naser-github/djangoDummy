@@ -25,7 +25,7 @@
         <h2>Upcoming Meetups</h2>
         <ol>
             {% for meetup in meetups %}
-                {% include 'challenges/component/meet_up_loop.html' with title=meetup.title slug=meetup.slug location='Istanbul' %}
+                {% include 'challenges/component/meet_up_loop.html' with title=meetup.title slug=meetup.slug image=meetup.images.url location='Istanbul' %}
             {% endfor %}
         </ol>
     </section>
