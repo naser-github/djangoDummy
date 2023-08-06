@@ -3,6 +3,6 @@ from . import views
 
 
 urlpatterns = [
-    path('meetups/', views.index, name='meetup-index'),
-    path('meetups/<slug:meetup_slug>', views.meetup_details, name='meetup-detail'),
+    path('', views.index, name='meetup-index'),
+    path('<slug:meetup_slug>', views.meetup_details, name='meetup-detail'),
 ]
